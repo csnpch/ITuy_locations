@@ -43,8 +43,8 @@ export default function LayoutPlace(props: propsInterface) {
             {
                 (loading) &&
                 <div className={`fixed wh-full top-0 left-0`}>
-                    <div className="wh-full flex-center pt-20">
-                        <ReactLoading type={'bubbles'} color={'black'} height={'16%'} width={'16%'} />
+                    <div className="wh-full flex-center pt-4">
+                        <ReactLoading type={'bubbles'} color={'black'} height={'4rem'} width={'4rem'} />
                     </div>
                 </div>
             }
