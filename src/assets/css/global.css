@@ -1,0 +1,27 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Propoties */
+
+.h-screen-svh {
+    height: 100svh;
+}
+
+.wh-full {
+    width: 100%;
+    height: 100%;
+}
+
+.wh-full-screen {
+    width: 100vw;
+    height: 100svh;
+}
+
+
+
+/* Normal */
+body {
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+}
