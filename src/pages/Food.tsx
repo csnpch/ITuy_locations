@@ -11,7 +11,9 @@ export default function Food() {
                 iframe={<>
                     <iframe 
                         src="https://www.google.com/maps/d/embed?mid=1GQNeVweNT5-MwztZAn_QaiMkrl1X7HY&ehbc=2E312F&noprof=1"
-                        className='wh-full' 
+                        className='wh-full'
+                        // disable 2 finger zoom
+                        style={{ touchAction: 'none' }}
                     />
                 </>}
             />

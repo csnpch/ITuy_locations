@@ -8,8 +8,10 @@ import { menus } from './data/menu'
 function App() {
   
   useEffect(() => {
-    document.body.style.overflowX = 'auto'
-  }, [document])
+    if (window.location.href === '/') {
+      document.body.style.overflowX = 'auto'
+    }
+  }, [document, window.location.href])
 
 
   return (
@@ -30,7 +32,7 @@ function App() {
                   backgroundImg={menu.banner_image}
                   path={menu.path}
                   backgroundPosition={menu.class}
-                  className={`fadeIn opacity-0 delay-0${index + 4}`}
+                  className={`bg-black fadeIn opacity-0 delay-0${index + 4}`}
                 />  
               );
             })

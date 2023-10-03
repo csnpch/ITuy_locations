@@ -1,8 +1,8 @@
-import foodImg from './../assets/img/food.webp'
-import serviceImg from './../assets/img/services.webp'
-import repairImg from './../assets/img/repair.webp'
-import cafeImg from './../assets/img/cafe.webp'
-import travelImg from './../assets/img/travel.webp'
+import foodImg from './../assets/img/food.svg'
+import serviceImg from './../assets/img/services.svg'
+import repairImg from './../assets/img/repair.svg'
+import cafeImg from './../assets/img/cafe.svg'
+import travelImg from './../assets/img/travel.svg'
 
 
 export const menus = {
