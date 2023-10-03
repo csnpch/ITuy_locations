@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import MenuCard from './components/MenuCard'
 
 import Navbar from './components/Navbar'
@@ -5,9 +6,14 @@ import { menus } from './data/menu'
 
 
 function App() {
+  
+  useEffect(() => {
+    document.body.style.overflowX = 'auto'
+  }, [document])
+
+
   return (
     <>
-    
       <div className={`w-screen h-screen-svh bg-base`}>
 
         <Navbar customTitle='📍 สถานที่แนะนำใกล้มอ' />
@@ -24,14 +30,13 @@ function App() {
                   backgroundImg={menu.banner_image}
                   path={menu.path}
                   backgroundPosition={menu.class}
+                  className={`fadeIn opacity-0 delay-0${index + 4}`}
                 />  
               );
             })
           }
         </div>
-
       </div>
-    
     </>
   )
 }

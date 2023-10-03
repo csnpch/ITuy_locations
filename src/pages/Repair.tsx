@@ -10,7 +10,7 @@ export default function Repair() {
                 prevRoute={routerDict.root.path}
                 iframe={<>
                     <iframe 
-                        src="https://www.google.com/maps/d/embed?mid=1cpCSELrXLCdWsbtwCWIrU7I7YW5oJso&ehbc=2E312F" 
+                        src="https://www.google.com/maps/d/embed?mid=1cpCSELrXLCdWsbtwCWIrU7I7YW5oJso&ehbc=2E312F&noprof=1" 
                         className='wh-full' 
                     />
                 </>}

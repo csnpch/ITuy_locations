@@ -10,6 +10,7 @@
 
 
 .menu-card-container {
-    @apply flex flex-col items-center justify-start gap-4 pb-20
+    @apply flex flex-col items-center justify-start gap-4 pb-40
+        xl:grid xl:grid-cols-3 xl:justify-center xl:items-center xl:gap-3 xl:px-10
 }
 

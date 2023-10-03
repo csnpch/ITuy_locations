@@ -8,6 +8,7 @@ interface propsInterface {
     backgroundImg?: string
     backgroundPosition?: string
     path?: string
+    className?: HTMLElement['className']
 }
 
 
@@ -29,6 +30,8 @@ export default function MenuCard(props: propsInterface) {
                 className={_class(`
                     relative bg-white rounded-xl w-11/12 mx-auto max-w-[40rem] 
                     h-[10rem] shadow-lg overflow-hidden cursor-pointer hover:shadow-xl duration-200
+                    xl:w-full xl:h-[12rem]
+                    ${props.className || ''}
                 `)}
                 onClick={handleNavigate}
             >

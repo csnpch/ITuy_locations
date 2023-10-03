@@ -1,9 +1,27 @@
-import foodImg from './../assets/img/thai_food.jpg'
-import serviceImg from './../assets/img/services.png'
-import repairImg from './../assets/img/repair.png'
+import foodImg from './../assets/img/food.webp'
+import serviceImg from './../assets/img/services.webp'
+import repairImg from './../assets/img/repair.webp'
+import cafeImg from './../assets/img/cafe.webp'
+import travelImg from './../assets/img/travel.webp'
 
 
 export const menus = {
+    travel: {
+        emoji: '🏕️🍃',
+        title: 'สถานที่ท่องเที่ยว',
+        description: '',
+        banner_image: travelImg,
+        class: '',
+        path: '/travel'
+    },
+    cafe: {
+        emoji: '☕️🧋',
+        title: 'คาเฟ่',
+        description: '',
+        banner_image: cafeImg,
+        class: '',
+        path: '/cafe'
+    },
     food: {
         emoji: '🍛🍜',
         title: 'ร้านอาหาร',

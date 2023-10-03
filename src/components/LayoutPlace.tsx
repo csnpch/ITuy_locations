@@ -16,11 +16,11 @@ export default function LayoutPlace(props: propsInterface) {
     
     const [loading, setLoading] = useState(true)
 
-
     useEffect(() => {
         setLoading(true)
         setTimeout(() => setLoading(false), 1000)
-    }, [])
+    }, [document])
+    
     
     return (
         <>
@@ -33,9 +33,10 @@ export default function LayoutPlace(props: propsInterface) {
             <div className={_class(`
                 ${
                     props.iframe &&
-                    'pt-[2.8rem] w-full h-screen-svh overflow-y-hidden'
+                    'relative pt-[2.8rem] w-full h-screen-svh'
                 }
             `)}>
+                {/* <div className="p-4 bg-black text-white absolute top-10 left-10" onClick={onClickToggleLocationList}>Open List</div> */}
                 { props.children && props.children }
                 { props.iframe && props.iframe }
             </div>

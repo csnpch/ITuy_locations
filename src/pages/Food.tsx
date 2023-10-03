@@ -10,7 +10,7 @@ export default function Food() {
                 prevRoute={routerDict.root.path}
                 iframe={<>
                     <iframe 
-                        src="https://www.google.com/maps/d/embed?mid=1GQNeVweNT5-MwztZAn_QaiMkrl1X7HY&ehbc=2E312F"
+                        src="https://www.google.com/maps/d/embed?mid=1GQNeVweNT5-MwztZAn_QaiMkrl1X7HY&ehbc=2E312F&noprof=1"
                         className='wh-full' 
                     />
                 </>}
