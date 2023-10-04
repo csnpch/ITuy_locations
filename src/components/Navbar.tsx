@@ -1,6 +1,7 @@
 import { GoChevronLeft } from 'react-icons/go'
 import { useNavigate } from 'react-router-dom'
 import { _class } from '../utils/helper'
+import { routerDict } from '../routes'
 
 interface propsInterface {
     customTitle?: string,
@@ -29,7 +30,7 @@ export default function Navbar(props: propsInterface) {
                     height: props.height || ''
                 }}
             >
-                <div className="wh-full grid grid-cols-[6rem_1fr_6rem]">
+                <div className="wh-full grid grid-cols-[2rem_1fr_2rem]">
                     <div className={`flex items-center`}>
                         {
                             props.prevRoute &&
@@ -39,10 +40,14 @@ export default function Navbar(props: propsInterface) {
                             />
                         }
                     </div>
-                    <div className={`flex-center`}>
+                    <div className={`flex-center flex-col`}>
                         <p className={`tracking-wide`}>
                             { props.customTitle || 'สถานที่แนะนำใกล้มอ' }
                         </p>
+                        {
+                            (props.prevRoute !== routerDict.root.path) &&
+                            <p className='text-[0.7rem] -mt-[0.24rem]'>มจพ. ปราจีนฯ</p>
+                        }
                     </div>
                     <div>
                     </div>
