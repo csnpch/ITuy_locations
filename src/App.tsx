@@ -3,9 +3,15 @@ import MenuCard from './components/MenuCard'
 import Navbar from './components/Navbar'
 import { menus } from './data/menu'
 import FloatingButton from './components/FloatingButton'
+import { useEffect } from 'react'
 
 
 function App() {
+
+  useEffect(() => {
+    document.body.style.overflowY = 'auto'
+  }, [])
+
   return (
     <>
       <div className={`w-screen h-screen-svh bg-base`}>

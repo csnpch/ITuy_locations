@@ -3,6 +3,7 @@ import serviceImg from './../assets/img/services.png'
 import repairImg from './../assets/img/repair.png'
 import cafeImg from './../assets/img/cafe.jpeg'
 import travelImg from './../assets/img/travel.jpeg'
+import dormitoryImg from './../assets/img/dormitory.png'
 
 
 export const menus = {
@@ -45,5 +46,13 @@ export const menus = {
         banner_image: repairImg,
         class: 'object-bottom',
         path: '/repair'
+    },
+    dormitory: {
+        emoji: '🏢🏘️',
+        title: 'หอพัก',
+        description: '',
+        banner_image: dormitoryImg,
+        class: '',
+        path: '/dormitory'
     },
 }

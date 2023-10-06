@@ -8,6 +8,7 @@ interface propsInterface {
     prevRoute?: string,
     children?: React.ReactNode,
     iframe?: React.ReactNode,
+    refContainerIframe?: React.MutableRefObject<HTMLDivElement>,
     disableLoding?: boolean,
     className?: HTMLElement['className']
 }
@@ -19,6 +20,12 @@ export default function LayoutPlace(props: propsInterface) {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
+        document.body.style.overflow = 'hidden'
+        setTimeout(() => {
+            document.querySelector('.h-screen-svh')?.classList.add('h-screen-svh-iframe-map')
+            document.querySelector('.h-screen-svh')?.scrollTo(0, 0)
+        }, 800)
+
         if (props.disableLoding) return
         setLoading(true)
         setTimeout(() => setLoading(false), 1000)

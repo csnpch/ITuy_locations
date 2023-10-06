@@ -13,6 +13,11 @@
     height: 100svh;
 }
 
+.h-screen-svh-iframe-map {
+    height: 120svh !important;
+    overflow-y: hidden;
+}
+
 .wh-full {
     width: 100%;
     height: 100%;
