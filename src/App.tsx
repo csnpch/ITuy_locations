@@ -1,19 +1,11 @@
-import { useEffect } from 'react'
 import MenuCard from './components/MenuCard'
 
 import Navbar from './components/Navbar'
 import { menus } from './data/menu'
+import FloatingButton from './components/FloatingButton'
 
 
 function App() {
-  
-  useEffect(() => {
-    if (window.location.href === '/') {
-      document.body.style.overflowX = 'auto'
-    }
-  }, [document, window.location.href])
-
-
   return (
     <>
       <div className={`w-screen h-screen-svh bg-base`}>
@@ -38,6 +30,9 @@ function App() {
             })
           }
         </div>
+
+        <FloatingButton />
+
       </div>
     </>
   )

@@ -15,3 +15,12 @@
         2xl:grid-cols-4 3xl:grid-cols-5
 }
 
+
+.text-input {
+    @apply w-full px-3 py-2.5 border-[0.12rem] rounded-md border-black/40 tracking-wide outline-indigo-600 bg-gray-100
+}
+
+
+.label-input {
+    @apply text-blue-800 text-[0.92rem] tracking-wide
+}

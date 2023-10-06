@@ -5,6 +5,7 @@ import Services from "../pages/Services";
 import Repair from "../pages/Repair";
 import Cafe from "../pages/Cafe";
 import Travel from "../pages/Travel";
+import AddPlace from "../pages/AddPlace";
 
 export interface routerItemInterface {
   path: string
@@ -19,6 +20,7 @@ export interface routerDictInterface {
   repair: routerItemInterface
   cafe: routerItemInterface
   travel: routerItemInterface
+  add_place: routerItemInterface
 }
 
 
@@ -46,6 +48,10 @@ export const routerDict: routerDictInterface = {
   travel: {
     path: '/travel',
     element: <Travel />,
+  },
+  add_place: {
+    path: '/add-place',
+    element: <AddPlace />
   },
 }
 

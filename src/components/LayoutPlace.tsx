@@ -8,15 +8,18 @@ interface propsInterface {
     prevRoute?: string,
     children?: React.ReactNode,
     iframe?: React.ReactNode,
+    disableLoding?: boolean,
+    className?: HTMLElement['className']
 }
 
 
 
 export default function LayoutPlace(props: propsInterface) {
     
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
+        if (props.disableLoding) return
         setLoading(true)
         setTimeout(() => setLoading(false), 1000)
     }, [document])
@@ -31,6 +34,7 @@ export default function LayoutPlace(props: propsInterface) {
             />
 
             <div className={_class(`
+                ${props.className || ''}
                 ${
                     props.iframe &&
                     'relative pt-[2.8rem] w-full h-screen-svh'

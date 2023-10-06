@@ -4,6 +4,7 @@ import { RouterProvider } from 'react-router-dom'
 import { router } from './routes/index.tsx'
 import './assets/css/global.css'
 
+import 'sweetalert2/src/sweetalert2.scss'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
